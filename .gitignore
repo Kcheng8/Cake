@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+.env
+
+# Node modules (if you add npm later)
+node_modules/
+package-lock.json
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# Backups
+*.bak
+*.backup
