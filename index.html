@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Velvet Crumbs - Premium handcrafted cakes in Brisbane. Custom cakes for birthdays, weddings, and celebrations. Brisbane delivery and local pickup available.">
+    <meta name="keywords" content="Brisbane custom cakes, cake delivery Brisbane, wedding cakes Brisbane, birthday cakes Brisbane, celebration cakes, cupcakes Brisbane">
+    <meta name="author" content="Velvet Crumbs">
+    <meta property="og:title" content="Velvet Crumbs | Premium Handcrafted Cakes Brisbane">
+    <meta property="og:description" content="Discover handcrafted premium cakes for every occasion in Brisbane. Custom designed, made to order, using premium ingredients.">
+    <meta property="og:type" content="business.business">
+    <meta property="og:url" content="https://velvetcrumbs.com.au">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1200&h=630&fit=crop">
+    <title>Velvet Crumbs | Premium Custom Cakes Brisbane | Handcrafted Desserts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="header-content">
+            <a href="#home" class="logo">Velvet Crumbs</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="theme-slider">
+                <input type="checkbox" id="themeToggle" title="Toggle dark mode">
+                <span class="slider"></span>
+            </label>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Velvet Crumbs</h1>
+            <p class="tagline">Handcrafted Cakes for Every Occasion</p>
+            <p>Premium custom cakes designed and baked fresh in Brisbane. From intimate birthdays to grand celebrations, every creation is made with love and the finest ingredients.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Order Now</a>
+                <a href="#menu" class="btn btn-secondary">View Cakes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about" id="about">
+        <div class="section-title">Our Story</div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Handcrafted Excellence Since 2018</h3>
+                <p>Velvet Crumbs began with a passion for creating beautiful, delicious cakes that bring people together. Founded in the heart of Brisbane, we've built our reputation on quality, creativity, and genuine care for every celebration we're part of.</p>
+                <p>Each cake is made to order using premium ingredients sourced from trusted local and international suppliers. We don't believe in shortcuts—every layer, every decoration, every flavour is thoughtfully crafted.</p>
+                <p>Whether it's a milestone birthday, a dream wedding, a baby announcement, or a corporate event, we'd love to be part of your special moment. We serve Brisbane and surrounding suburbs with pride.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1585080195519-c21a5b27b0e0?w=500&h=500&fit=crop" alt="Handcrafted premium cakes at Velvet Crumbs Brisbane">
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURED CAKES SECTION ==================== -->
+    <section class="featured" id="featured">
+        <div class="section-title">Signature Collections</div>
+        <div class="section-subtitle">Discover our most celebrated cake creations</div>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop" alt="Rose Garden Wedding Cake - elegant white tiered celebration cake">
+                <div class="featured-info">
+                    <h3>Rose Garden</h3>
+                    <div class="featured-price">From $350</div>
+                    <p class="featured-reason">Our most requested wedding cake. Three-tiered white velvet with handcrafted sugar roses and gold leaf details. Serves 60+ guests.</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=400&h=300&fit=crop" alt="Chocolate Indulgence Cake - rich dark chocolate celebration cake">
+                <div class="featured-info">
+                    <h3>Chocolate Indulgence</h3>
+                    <div class="featured-price">From $85</div>
+                    <p class="featured-reason">Rich dark chocolate sponge with silky ganache, topped with fresh berries. Perfect for chocolate lovers and intimate celebrations.</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e157?w=400&h=300&fit=crop" alt="Berry Blossom Cake - pink and white strawberry celebration cake">
+                <div class="featured-info">
+                    <h3>Berry Blossom</h3>
+                    <div class="featured-price">From $95</div>
+                    <p class="featured-reason">Delicate vanilla sponge with fresh strawberries and whipped cream. A Brisbane favourite for baby showers and garden parties.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== MENU / CAKE COLLECTION ==================== -->
+    <section class="menu" id="menu">
+        <div class="section-title">Our Menu</div>
+        <div class="section-subtitle">Browse our full collection of cakes and treats</div>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All Cakes</button>
+            <button class="category-btn" data-category="birthday">Birthday Cakes</button>
+            <button class="category-btn" data-category="wedding">Wedding Cakes</button>
+            <button class="category-btn" data-category="cupcakes">Cupcakes</button>
+            <button class="category-btn" data-category="celebration">Celebration</button>
+        </div>
+
+        <div class="cake-grid">
+            <!-- Birthday Cakes -->
+            <div class="cake-card" data-category="birthday">
+                <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=300&h=200&fit=crop" alt="Classic Vanilla Birthday Cake - perfect for all ages">
+                <div class="cake-info">
+                    <div class="cake-name">Classic Vanilla</div>
+                    <p class="cake-description">Light, fluffy vanilla sponge with butter cream and fresh berries. Customizable with any message or design.</p>
+                    <div class="cake-price">From $65</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="birthday">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop" alt="Rainbow Birthday Cake - colourful celebration cake for kids">
+                <div class="cake-info">
+                    <div class="cake-name">Rainbow Delight</div>
+                    <p class="cake-description">Vibrant multi-layer sponge with colourful frosting. A show-stopper for children's birthdays and celebrations.</p>
+                    <div class="cake-price">From $80</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="birthday">
+                <img src="https://images.unsplash.com/photo-1507920591413-26629a8f87b9?w=300&h=200&fit=crop" alt="Caramel Crunch Birthday Cake - decadent grown-up cake">
+                <div class="cake-info">
+                    <div class="cake-name">Caramel Crunch</div>
+                    <p class="cake-description">Spiced sponge with salted caramel filling and crunchy praline topping. Perfect for adults and sophisticated palates.</p>
+                    <div class="cake-price">From $90</div>
+                </div>
+            </div>
+
+            <!-- Wedding Cakes -->
+            <div class="cake-card" data-category="wedding">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop" alt="Classic Elegant Wedding Cake - white three-tier wedding cake">
+                <div class="cake-info">
+                    <div class="cake-name">Classic Elegance</div>
+                    <p class="cake-description">Timeless three-tier white velvet with delicate lace details and sugar flowers. The perfect traditional choice.</p>
+                    <div class="cake-price">From $350</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="wedding">
+                <img src="https://images.unsplash.com/photo-1543007630-b8f5c9b9c0a0?w=300&h=200&fit=crop" alt="Modern Geometric Wedding Cake - contemporary style wedding cake">
+                <div class="cake-info">
+                    <div class="cake-name">Modern Geometry</div>
+                    <p class="cake-description">Contemporary two-tier design with bold geometric patterns and metallic accents. For the modern couple.</p>
+                    <div class="cake-price">From $320</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="wedding">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop" alt="Royal Romance Wedding Cake - luxury wedding cake">
+                <div class="cake-info">
+                    <div class="cake-name">Royal Romance</div>
+                    <p class="cake-description">Luxurious four-tier creation with gold leaf, fresh roses, and intricate piping. An unforgettable centerpiece.</p>
+                    <div class="cake-price">From $450</div>
+                </div>
+            </div>
+
+            <!-- Cupcakes -->
+            <div class="cake-card" data-category="cupcakes">
+                <img src="https://images.unsplash.com/photo-1587080195519-c21a5b27b0e0?w=300&h=200&fit=crop" alt="Vanilla Buttercream Cupcakes - classic cupcake selection">
+                <div class="cake-info">
+                    <div class="cake-name">Vanilla Buttercream</div>
+                    <p class="cake-description">Fresh vanilla sponge topped with creamy buttercream. Perfect for gifts or celebrations. Box of 6 or 12.</p>
+                    <div class="cake-price">From $30</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="cupcakes">
+                <img src="https://images.unsplash.com/photo-1550617931-e17a7aeae2e0?w=300&h=200&fit=crop" alt="Choc Mud Cupcakes - decadent chocolate cupcakes">
+                <div class="cake-info">
+                    <div class="cake-name">Choc Mud</div>
+                    <p class="cake-description">Intensely chocolatey sponge with fudge frosting and sprinkles. A treat for serious chocolate fans.</p>
+                    <div class="cake-price">From $36</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="cupcakes">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop" alt="Lemon Raspberry Cupcakes - zesty fresh cupcakes">
+                <div class="cake-info">
+                    <div class="cake-name">Lemon Raspberry</div>
+                    <p class="cake-description">Bright lemon sponge with fresh raspberries and tangy cream cheese frosting. Refreshing and vibrant.</p>
+                    <div class="cake-price">From $36</div>
+                </div>
+            </div>
+
+            <!-- Celebration Cakes -->
+            <div class="cake-card" data-category="celebration">
+                <img src="https://images.unsplash.com/photo-1563805042-7684c019e157?w=300&h=200&fit=crop" alt="Baby Shower Cake - soft pink baby celebration cake">
+                <div class="cake-info">
+                    <div class="cake-name">Baby Bliss</div>
+                    <p class="cake-description">Soft pastel design with delicate fondant details and baby-themed decorations. Celebrate in style.</p>
+                    <div class="cake-price">From $75</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="celebration">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300&h=200&fit=crop" alt="Anniversary Cake - elegant celebration cake for couples">
+                <div class="cake-info">
+                    <div class="cake-name">Golden Anniversary</div>
+                    <p class="cake-description">Elegant design with gold accents and personalized number details. Perfect for milestone celebrations.</p>
+                    <div class="cake-price">From $100</div>
+                </div>
+            </div>
+
+            <div class="cake-card" data-category="celebration">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=300&h=200&fit=crop" alt="Corporate Event Cake - professional cake for businesses">
+                <div class="cake-info">
+                    <div class="cake-name">Corporate Elegance</div>
+                    <p class="cake-description">Professional multi-tiered designs custom-branded for your company. Premium option for corporate events.</p>
+                    <div class="cake-price">From $200</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US SECTION ==================== -->
+    <section class="why-choose">
+        <div class="section-title">Why Choose Velvet Crumbs</div>
+        <div class="section-subtitle">We're committed to making your celebration unforgettable</div>
+        
+        <div class="features-grid">
+            <div class="feature-box">
+                <div class="feature-icon">✨</div>
+                <h3>Custom Designed</h3>
+                <p>Every cake is created to your specifications. Bring your vision to life with our expert design consultation.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🎂</div>
+                <h3>Premium Ingredients</h3>
+                <p>We use only the finest quality ingredients, sourced locally and internationally, for superior flavour.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">🚚</div>
+                <h3>Brisbane Delivery</h3>
+                <p>Free delivery to most Brisbane suburbs. Local pickup available at our South Brisbane studio.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">👨‍🍳</div>
+                <h3>Baked Fresh</h3>
+                <p>All cakes are made to order and baked fresh within 48 hours of your event for maximum flavour.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">📦</div>
+                <h3>Expert Handling</h3>
+                <p>Our team carefully prepares and delivers each cake with professional packaging and setup support.</p>
+            </div>
+
+            <div class="feature-box">
+                <div class="feature-icon">💭</div>
+                <h3>Detailed Consultation</h3>
+                <p>We take time to understand your vision, preferences, and dietary requirements for the perfect cake.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== TESTIMONIALS SECTION ==================== -->
+    <section class="testimonials">
+        <div class="section-title">What Our Customers Say</div>
+        <div class="section-subtitle">Real stories from real celebrations in Brisbane</div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The wedding cake from Velvet Crumbs was absolutely stunning and tasted divine. Our guests raved about it! The team were so professional and helpful during the consultation. Highly recommend!"</p>
+                <div class="testimonial-author">— Sarah & Mike</div>
+                <div class="testimonial-occasion">Wedding Reception, West End</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I ordered cupcakes for my daughter's birthday and they were fresh, delicious, and beautifully decorated. Will definitely be ordering again for every celebration. Best cakes in Brisbane!"</p>
+                <div class="testimonial-author">— Jennifer</div>
+                <div class="testimonial-occasion">Birthday Party, Paddington</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Custom cake for our baby shower was absolutely perfect. The team listened to every detail and created exactly what I imagined. Delivery was on time and the cake arrived in pristine condition."</p>
+                <div class="testimonial-author">— Emma</div>
+                <div class="testimonial-occasion">Baby Shower, Annerley</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT / FORM SECTION ==================== -->
+    <section class="contact-form-section" id="contact">
+        <div class="section-title">Order Your Cake</div>
+        <div class="section-subtitle">Fill out the form below to start your cake journey</div>
+
+        <div class="form-container">
+            <div class="form-message" id="formMessage"></div>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="form-error">Please enter your name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="form-error">Please enter a valid email</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <div class="form-error">Please enter your phone number</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                        <div class="form-error">Please select a date</div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="eventType">Event Type *</label>
+                        <select id="eventType" name="eventType" required>
+                            <option value="">Select an event...</option>
+                            <option value="birthday">Birthday</option>
+                            <option value="wedding">Wedding</option>
+                            <option value="babyshower">Baby Shower</option>
+                            <option value="anniversary">Anniversary</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="form-error">Please select an event type</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cakeType">Cake Type Preference *</label>
+                        <select id="cakeType" name="cakeType" required>
+                            <option value="">Select a cake...</option>
+                            <option value="vanilla">Vanilla</option>
+                            <option value="chocolate">Chocolate</option>
+                            <option value="strawberry">Strawberry</option>
+                            <option value="custom">Custom / Combination</option>
+                        </select>
+                        <div class="form-error">Please select a cake type</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message / Special Requests</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your vision, dietary requirements, design ideas, etc."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ==================== LOCATION SECTION ==================== -->
+    <section class="location" id="location">
+        <div class="section-title">Visit Us</div>
+        
+        <div class="location-content">
+            <div class="location-info">
+                <h3>Velvet Crumbs Studio</h3>
+                
+                <div class="info-block">
+                    <span class="info-label">📍 Studio Location</span>
+                    <p>South Brisbane, QLD 4101</p>
+                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Appointment-based consultation service available</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="info-label">📞 Contact</span>
+                    <p><strong>Phone:</strong> (07) 3156 8234</p>
+                    <p><strong>Email:</strong> hello@velvetcrumbs.com.au</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="info-label">🕐 Business Hours</span>
+                    <p><strong>Tuesday - Friday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM</p>
+                    <p><strong>Sunday - Monday:</strong> Closed</p>
+                </div>
+
+                <div class="info-block">
+                    <span class="info-label">🚚 Delivery & Pickup</span>
+                    <p><strong>Free delivery:</strong> Most Brisbane suburbs (5-20 km radius)</p>
+                    <p><strong>Local pickup:</strong> Available from studio</p>
+                    <p><strong>Outer areas:</strong> Contact us for quote</p>
+                </div>
+            </div>
+
+            <div class="location-map">
+                <iframe title="Velvet Crumbs Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.9395882435535!2d153.00627!3d-27.47614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b92a5c5c5c5c5c5%3A0x5c5c5c5c5c5c5c5c!2sSouth%20Brisbane%20QLD!5e0!3m2!1sen!2sau!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Velvet Crumbs</h3>
+                <p>Premium handcrafted cakes for every occasion in Brisbane. Made with love, baked fresh, and designed to impress.</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" title="Instagram">📷</a>
+                    <a href="https://facebook.com" title="Facebook">f</a>
+                    <a href="https://pinterest.com" title="Pinterest">📌</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#featured">Featured Cakes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#menu">Custom Cakes</a></li>
+                    <li><a href="#menu">Wedding Cakes</a></li>
+                    <li><a href="#menu">Cupcakes</a></li>
+                    <li><a href="#location">Brisbane Delivery</a></li>
+                    <li><a href="#location">Local Pickup</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Local Service</h3>
+                <p><strong>Based in Brisbane, Australia</strong></p>
+                <p>We proudly serve Brisbane and surrounding suburbs with premium handcrafted cakes for birthdays, weddings, celebrations, and special events.</p>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">All cakes made to order | Free Brisbane delivery | Premium ingredients</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Velvet Crumbs. All rights reserved. | Premium Custom Cakes Brisbane | <a href="#" style="color: rgba(255,255,255,0.85); text-decoration: none;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
