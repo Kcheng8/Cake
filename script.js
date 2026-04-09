@@ -94,6 +94,32 @@ categoryBtns.forEach(btn => {
     });
 });
 
+// ==================== GALLERY FILTER ==================== 
+const galleryFilters = document.querySelectorAll('.gallery-filter');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+galleryFilters.forEach(filter => {
+    filter.addEventListener('click', () => {
+        // Update active filter button
+        galleryFilters.forEach(f => f.classList.remove('active'));
+        filter.classList.add('active');
+
+        // Filter gallery items
+        const selectedFilter = filter.getAttribute('data-filter');
+        galleryItems.forEach(item => {
+            if (selectedFilter === 'all' || item.getAttribute('data-filter') === selectedFilter) {
+                item.classList.remove('hidden');
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                }, 10);
+            } else {
+                item.classList.add('hidden');
+                item.style.opacity = '0';
+            }
+        });
+    });
+});
+
 // ==================== FORM VALIDATION & SUBMISSION ==================== 
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
